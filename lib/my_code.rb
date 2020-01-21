@@ -23,6 +23,10 @@ def reduce(source_array, starting_point = 0)
   return_value = 0 
   index = 0
   check = 0
+  if starting_point
+     set = starting_point
+  else
+     set = nil
   source_array.each do |num|
     if num
        num += num
@@ -36,7 +40,7 @@ def reduce(source_array, starting_point = 0)
 #    elsif check 
     
     end
-  return_value = yield(num, starting_point)
+  return_value = yield(num, set)
 end
 
 # reduce_to_total
