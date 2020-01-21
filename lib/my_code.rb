@@ -34,7 +34,7 @@ def reduce(source_array, starting_point = 0)
 end
 
 # reduce_to_total
-reduce([5,21,7,47]){|n, start| n * -1}
+reduce([5,21,7,47]){|n, start| n + start}
 # map_to_all_true
 reduce([5,21,7,48]){|n| n}
 # map_to_any_true
