@@ -29,6 +29,8 @@ def reduce(source_array, starting_point = 0)
        num += num
        return_value = yield(num, starting_point)
     end
+    if check == 0
+       return_value = nil
     index += 1
   end
   return_value
