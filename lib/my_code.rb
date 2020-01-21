@@ -27,6 +27,7 @@ def reduce(source_array, starting_point = 0)
      set = starting_point
   else
      set = nil
+  end
   source_array.each do |num|
     if num
        num += num
