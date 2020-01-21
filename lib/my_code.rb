@@ -5,7 +5,7 @@ def map(source_array)
   result_array = []
   index = 0
   source_array.each do |num|
-    yield(num)
+    num = yield
     result_array[index] = num
     index += 1
   end
