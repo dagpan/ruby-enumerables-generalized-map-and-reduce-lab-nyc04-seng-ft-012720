@@ -37,9 +37,9 @@ def reduce(source_array, starting_point = 0)
      set = starting_point
   elsif starting_point = 0
      if check_true == 0
-       set = nil
+        set = nil
      elsif check_true > 0 
-        if check_true  == index
+        if check_true == index
            set = starting_point
           
           
