@@ -35,11 +35,12 @@ def reduce(source_array, starting_point = 0)
     end
     index += 1
   end
-    if check == index
-       num = nil
-#    elsif check 
-    
-    end
+#    if set 
+#       check == index
+#       num = nil
+#    else
+#       
+#    end
   return_value = yield(num, set)
 end
 
