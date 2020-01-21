@@ -25,19 +25,17 @@ def reduce(source_array, starting_point = 0)
   check = 0
   source_array.each do |num|
     if num
-       check += 1
        num += num
+    else
+       check += 1
     end
     index += 1
   end
-    if check > 0
-       starting_point = 
-    elsif check == index
-       starting_point = 
-    else
+    if check == 1
        starting_point = nil
+    
+    
   return_value = yield(num, starting_point)
-  return_value
 end
 
 # reduce_to_total
