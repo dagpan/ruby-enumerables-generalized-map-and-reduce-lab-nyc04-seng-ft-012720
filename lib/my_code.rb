@@ -41,7 +41,12 @@ def reduce(source_array, starting_point = 0)
  else
      set = nil
 
-
+if check == index
+     return true  
+  else 
+     return false
+     
+     
 #    if set 
 #       check == index
 #       num = nil
