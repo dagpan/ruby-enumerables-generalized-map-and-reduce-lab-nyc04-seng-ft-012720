@@ -14,13 +14,13 @@ end
 
 
 # map_to_negativize
-map([5,21,7,47]){|number| n * -1}
+map([5,21,7,47]){|n| -n}
 # map_to_no_change
-map([5,21,7,48]){|number| number}
+map([5,21,7,48]){|n| n}
 # map_to_double
-map([56,8,4,16]){|number| number * 2}
+map([56,8,4,16]){|n| n + n}
 # map_to_square
-map([6,9,25,4]){|number| number ** 2}
+map([6,9,25,4]){|n| n * n}
 
 
 
