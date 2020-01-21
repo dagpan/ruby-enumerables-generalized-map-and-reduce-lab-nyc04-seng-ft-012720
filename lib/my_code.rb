@@ -29,9 +29,11 @@ def reduce(source_array, starting_point = 0)
        num += num
        return_value = yield(num, starting_point)
     end
+    index += 1
     if check == 0
        return_value = nil
-    index += 1
+    elsif check > 0
+       return_value
   end
   return_value
 end
