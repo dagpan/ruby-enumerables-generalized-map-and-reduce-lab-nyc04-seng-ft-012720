@@ -27,14 +27,16 @@ def reduce(source_array, starting_point = 0)
     if num
        check += 1
        num += num
-       return_value = yield(num, starting_point)
     end
     index += 1
-    if check == 0
-       return_value = nil
-    elsif check > 0
-       return_value
   end
+    if check > 0
+       starting_point = 
+    elsif check == index
+       starting_point = 
+    else
+       starting_point = nil
+  return_value = yield(num, starting_point)
   return_value
 end
 
