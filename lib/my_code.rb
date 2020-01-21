@@ -35,7 +35,7 @@ def reduce(source_array, starting_point = 0)
        num = nil
     elsif check 
     
-    
+    end
   return_value = yield(num, starting_point)
 end
 
