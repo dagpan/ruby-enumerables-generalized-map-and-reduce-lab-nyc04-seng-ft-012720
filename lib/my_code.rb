@@ -26,7 +26,8 @@ def reduce(source_array, starting_point = 0)
   check_false = 0
   source_array.each do |num|
     if num
-       return_value += num
+       num += num
+       return_value = num
        check_true += 1
     else
        check_false += 1
