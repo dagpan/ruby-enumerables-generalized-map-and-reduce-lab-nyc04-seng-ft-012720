@@ -23,7 +23,7 @@ def reduce(source_array, starting_point = 0)
   return_value = 0 
   index = 0
   check = 0
-  if starting_point > 0
+  if starting_point >= 0
      set = starting_point
   else
      set = nil
