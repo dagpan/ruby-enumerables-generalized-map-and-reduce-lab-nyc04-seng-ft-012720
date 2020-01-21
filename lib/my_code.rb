@@ -1,6 +1,5 @@
 # Your Code Here
 
-
 def map(source_array)
   result_array = []
   index = 0
@@ -10,7 +9,6 @@ def map(source_array)
   end
   result_array
 end
-
 
 # map_to_negativize
 map([5,21,7,47]){|n| n * -1}
