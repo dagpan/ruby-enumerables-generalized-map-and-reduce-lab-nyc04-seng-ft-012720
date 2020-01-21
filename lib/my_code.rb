@@ -19,10 +19,7 @@ map([56,8,4,16]){|n| n + n}
 # map_to_square
 map([6,9,25,4]){|n| n * n}
 
-
-
-
-def reduce_to_total(source_array, starting_point = 0)
+def reduce(source_array, starting_point = 0)
   return_value = 0
   index = 0
   while index < source_array.length
@@ -33,41 +30,6 @@ def reduce_to_total(source_array, starting_point = 0)
   end
   return_value += starting_point
 end
-
-
-def reduce_to_all_true(source_array)
-  index = 0
-  check = 0
-  source_array.each do |num|
-    if num
-       check += 1
-    end
-    index += 1
-  end
-  if check == index
-     return true  
-  else 
-     return false
-  end
-end
-
-def reduce_to_any_true(source_array)
-  index = 0
-  check = 0
-  source_array.each do |num|
-    if num
-       check += 1
-    end
-    index += 1
-  end
-  if check > 0
-     return true  
-  else 
-     return false
-  end
-end
-
-
 
 
 
