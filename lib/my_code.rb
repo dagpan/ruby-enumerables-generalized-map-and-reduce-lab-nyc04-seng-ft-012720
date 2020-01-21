@@ -26,14 +26,7 @@ def reduce(source_array, starting_point = 0)
   source_array.each do |num|
     if num
        check += 1
-       
-
-
-       return_value += num
-
-
-    return_value = yield(check,        , starting_point)
-
+       return_value += yield(num, starting_point)
     end
     index += 1
   end
@@ -41,7 +34,7 @@ def reduce(source_array, starting_point = 0)
 end
 
 # reduce_to_total
-reduce([5,21,7,47]){|n| n * -1}
+reduce([5,21,7,47]){|n, start| n * -1}
 # map_to_all_true
 reduce([5,21,7,48]){|n| n}
 # map_to_any_true
