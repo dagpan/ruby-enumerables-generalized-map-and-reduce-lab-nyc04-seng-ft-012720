@@ -38,42 +38,15 @@ def reduce(source_array, starting_point = 0)
   elsif starting_point = 0
      if check_true == 0
         set = nil
-     elsif check_true > 0 
-        if check_true == index
+     elsif check_true == index 
            set = starting_point
-          
-          
-       if check > 
-       
-      
-      
-      || check > 0
- 
- 
- 
- else
-     set = nil
+     else
+           set = nil
+#     elsif check_true 
+#           set = starting_point
 
-if check == index
-     return true  
-  else 
-     return false
-     
-   if check > 0
-     return true  
-  else 
-     return false
-     
-     
-#    if set 
-#       check == index
-#       num = nil
-#    else
-#       
-#    end
-
-
-
+     end     
+  end        
   return_value = yield(return_value, set)
 end
 
