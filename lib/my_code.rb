@@ -22,7 +22,7 @@ map([6,9,25,4]){|n| n * n}
 def reduce(source_array, starting_point = 0)
   return_value = 0 
   index = 0
-  count = 0
+  check = 0
   source_array.each do |num|
     if num
        check += 1
