@@ -23,12 +23,11 @@ def reduce(source_array, starting_point = 0)
   return_value = 0
   index = 0
   count = 0
-  
-  while index < source_array.length
+  source_array.each do |num|
+    if num
 
 
 
-        if source_array[index]
            return_value += source_array[index]
 
 
