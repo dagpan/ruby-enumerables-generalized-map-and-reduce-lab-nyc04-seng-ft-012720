@@ -29,7 +29,6 @@ def reduce(source_array, starting_point = 0)
   source_array.each do |num|
     if num
        return_value += num
-    else
        check += 1
     end
     index += 1
@@ -37,11 +36,26 @@ def reduce(source_array, starting_point = 0)
 
  
  if starting_point = 0
-    
+    if check == 0
+       set = nil
+    else
+       if check > 
+       
+      
+      
+      || check > 0
+ 
+ 
+ 
  else
      set = nil
 
 if check == index
+     return true  
+  else 
+     return false
+     
+   if check > 0
      return true  
   else 
      return false
