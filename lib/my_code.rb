@@ -52,9 +52,9 @@ def reduce(source_array, starting_point = 0)
 end
 
 # reduce_to_total
-reduce([5,21,7,47], 100){|n, start| n + start}
+#reduce([5,21,7,47], 100){|n, start| n + start}
 # map_to_all_true
-reduce([5,21,7,48]){|n, start| n && start}
+#reduce([5,21,7,48]){|n, start| n && start}
 # map_to_any_true
-reduce([56,8,4,16]){|n, start| n && start}
+#reduce([56,8,4,16]){|n, start| n && start}
 
