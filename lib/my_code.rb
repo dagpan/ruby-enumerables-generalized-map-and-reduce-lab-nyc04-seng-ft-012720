@@ -14,7 +14,7 @@ end
 
 
 # map_to_negativize
-map([5,21,7,47]){|number| number = number * -1}
+map([5,21,7,47]){|number| n * -1}
 # map_to_no_change
 map([5,21,7,48]){|number| number}
 # map_to_double
