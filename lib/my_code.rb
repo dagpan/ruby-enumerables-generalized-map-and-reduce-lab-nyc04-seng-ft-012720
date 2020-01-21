@@ -26,15 +26,11 @@ def reduce(source_array, starting_point = 0)
   source_array.each do |num|
     if num
        check += 1
+
+
+
        return_value += num
 
-    end
-    index += 1
-  end
-
-
-
-           return_value += source_array[index]
 
 
 
