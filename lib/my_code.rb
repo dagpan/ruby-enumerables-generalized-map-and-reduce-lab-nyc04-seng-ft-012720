@@ -25,8 +25,6 @@ def reduce(source_array, starting_point = 0)
   check = 0
   if starting_point >= 0
      set = starting_point
-  else
-     set = nil
   end
   source_array.each do |num|
     if num
@@ -36,12 +34,23 @@ def reduce(source_array, starting_point = 0)
     end
     index += 1
   end
+
+ 
+ if starting_point = 0
+    
+ else
+     set = nil
+
+
 #    if set 
 #       check == index
 #       num = nil
 #    else
 #       
 #    end
+
+
+
   return_value = yield(return_value, set)
 end
 
