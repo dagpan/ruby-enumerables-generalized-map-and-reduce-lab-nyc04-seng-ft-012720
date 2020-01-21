@@ -14,11 +14,11 @@ end
 
 
 # map_to_negativize
-map([5,21,7,47]){|n| n}
+map([5,21,7,47]){|n| n * -1}
 # map_to_no_change
 map([5,21,7,48]){|n| n}
 # map_to_double
-map([56,8,4,16]){|n| (n + n)}
+map([56,8,4,16]){|n| n + n}
 # map_to_square
 map([6,9,25,4]){|n| n * n}
 
