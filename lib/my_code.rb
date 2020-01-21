@@ -5,7 +5,7 @@ def map(source_array)
   result_array = []
   index = 0
   source_array.each do |num|
-    num = num * -1
+    yield(num)
     result_array[index] = num
     index += 1
   end
@@ -14,7 +14,7 @@ end
 
 
 # map_to_negativize
-map(source_array) {||         }
+map(source_array) {|number| number = number * -1}
 # map_to_no_change
 map(source_array) {||         }
 # map_to_double
