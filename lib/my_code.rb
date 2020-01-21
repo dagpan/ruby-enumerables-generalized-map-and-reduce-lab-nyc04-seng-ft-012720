@@ -26,7 +26,8 @@ def reduce(source_array, starting_point = 0)
   source_array.each do |num|
     if num
        check += 1
-       return_value += yield(num, starting_point)
+       num += num
+       return_value = yield(num, starting_point)
     end
     index += 1
   end
