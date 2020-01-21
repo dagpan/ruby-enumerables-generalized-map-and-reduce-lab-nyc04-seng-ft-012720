@@ -16,11 +16,11 @@ end
 # map_to_negativize
 map(source_array) {|number| number = number * -1}
 # map_to_no_change
-map(source_array) {||         }
+map(source_array) {|number| number = number}
 # map_to_double
-map(source_array) {||         }
+map(source_array) {|number| number *= number}
 # map_to_square
-map(source_array) {||         }
+map(source_array) {|number| number = number**2}
 
 
 
