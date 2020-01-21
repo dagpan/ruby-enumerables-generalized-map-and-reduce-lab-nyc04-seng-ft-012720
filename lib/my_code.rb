@@ -1,7 +1,7 @@
 # Your Code Here
 
 
-def map_to_negativize(source_array)
+def map(source_array)
   result_array = []
   index = 0
   source_array.each do |num|
