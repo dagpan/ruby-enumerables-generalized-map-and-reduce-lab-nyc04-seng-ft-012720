@@ -32,7 +32,8 @@ def reduce(source_array, starting_point = 0)
     index += 1
   end
     if check == index
-       starting_point = nil
+       num = nil
+    elsif check 
     
     
   return_value = yield(num, starting_point)
@@ -41,7 +42,7 @@ end
 # reduce_to_total
 reduce([5,21,7,47]){|n, start| n + start}
 # map_to_all_true
-reduce([5,21,7,48]){|n| n}
+reduce([5,21,7,48]){|n, start| n && start}
 # map_to_any_true
-reduce([56,8,4,16]){|n| n + n}
+reduce([56,8,4,16]){|n, start| n && start}
 
