@@ -22,14 +22,27 @@ map([6,9,25,4]){|n| n * n}
 def reduce(source_array, starting_point = 0)
   return_value = 0
   index = 0
+  count = 0
+  
   while index < source_array.length
+
+
+
         if source_array[index]
            return_value += source_array[index]
-        end
-        index += 1
+
+
+
+    end
+    index += 1
   end
-  return_value += starting_point
+  return_value
 end
 
-
+# reduce_to_total
+reduce([5,21,7,47]){|n| n * -1}
+# map_to_all_true
+reduce([5,21,7,48]){|n| n}
+# map_to_any_true
+reduce([56,8,4,16]){|n| n + n}
 
