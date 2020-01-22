@@ -29,7 +29,7 @@ def reduce(source_array, starting_point = nil)
      index = 1
   end
   while index < source_array.length
-  
+        yield(set, source_array[])
   
   
   
