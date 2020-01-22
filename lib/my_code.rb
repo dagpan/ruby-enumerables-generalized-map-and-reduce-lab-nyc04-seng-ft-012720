@@ -20,16 +20,17 @@ map([56,8,4,16]){|n| n + n}
 map([6,9,25,4]){|n| n * n}
 
 def reduce(source_array, starting_point = nil)
-  return_value = 0 
   if starting_point
-     set = starting_point
+     return_value = starting_point
      index = 0
   else
-     set = source_array[0]
-     index = 1
+    return_value = source_array[0]
+    index = 1
   end
+  
+  
   while index < source_array.length
-        yield(set, source_array[])
+        return_value = yield(set, source_array[index])
   
   
   
