@@ -19,7 +19,7 @@ map([56,8,4,16]){|n| n + n}
 # map_to_square
 map([6,9,25,4]){|n| n * n}
 
-def reduce(source_array, starting_point = 0)
+def reduce(source_array, starting_point = nil)
   return_value = 0 
   index = 0
   check_true = 0
