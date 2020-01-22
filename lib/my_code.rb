@@ -21,21 +21,6 @@ map([6,9,25,4]){|n| n * n}
 
 def reduce(source_array, starting_point = nil)
   return_value = 0 
-  
-  check_true = 0
-  check_false = 0
-  source_array.each do |num|
-    if num
-       num += num
-       return_value = num
-       check_true += 1
-    else
-       check_false += 1
-    end
-    index += 1
-  end
- 
- 
   if starting_point
      set = starting_point
      index = 0
@@ -43,6 +28,9 @@ def reduce(source_array, starting_point = nil)
      set = source_array[0]
      index = 1
   end
+  while index < source_array.length
+  
+  
   
   
      
@@ -61,6 +49,21 @@ def reduce(source_array, starting_point = nil)
   end        
   return_value = yield(return_value, set)
 end
+
+check_true = 0
+  check_false = 0
+  source_array.each do |num|
+    if num
+       num += num
+       return_value = num
+       check_true += 1
+    else
+       check_false += 1
+    end
+    index += 1
+  end
+ 
+
 
 # reduce_to_total
 #reduce([5,21,7,47], 100){|n, start| n + start}
